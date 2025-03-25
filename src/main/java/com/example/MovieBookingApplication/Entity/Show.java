@@ -1,6 +1,7 @@
 package com.example.MovieBookingApplication.Entity;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -20,7 +21,7 @@ public class Show {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private LocalDate showTime;
+	private LocalDateTime showTime;
 	private Double price;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
@@ -46,11 +47,11 @@ public class Show {
 		this.id = id;
 	}
 
-	public LocalDate getShowTime() {
+	public LocalDateTime getShowTime() {
 		return showTime;
 	}
 
-	public void setShowTime(LocalDate showTime) {
+	public void setShowTime(LocalDateTime showTime) {
 		this.showTime = showTime;
 	}
 

@@ -42,7 +42,7 @@ public class BookingController {
 	
 	@PutMapping("/{id}/confirm")
 	public ResponseEntity<Booking> confirmBooking(@PathVariable Long id) {
-		return ResponseEntity.ok(bookingService.confrimBooking(id));
+		return ResponseEntity.ok(bookingService.confirmBooking(id));
 	}
 	
 	@PutMapping("/{id}/cancel")
