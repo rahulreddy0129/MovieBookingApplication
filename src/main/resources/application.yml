@@ -1,0 +1,17 @@
+spring:
+   application:
+      name: MovieBookingApplication
+
+spring:
+   datasource:
+      url: jdbc:postgresql://localhost:5432/mba1
+      username: postgres
+      password: root
+   jpa:
+      database-platform: io.github.jhipster.domain.util.FixedPostgreSQL10Dialect
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+jwt:
+   secret: VjNzcxZTY0NDMxOWJjYjUzZWNjYThhNjcwMDI0NWU2ZDM5ZGQ2YWMav@DFE=
+   expiration: 3600000
