@@ -50,8 +50,6 @@ public class TheaterController {
 		return ResponseEntity.ok().build();
 	}
 	
-	
-	
 }
 
 
